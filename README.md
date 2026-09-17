@@ -1,17 +1,27 @@
-# cricket_app
+# 🏏 Mini Cricket App
 
-A new Flutter project.
+A simple and interactive **Mini Cricket Mobile Application** built using **Flutter**. This application simulates a short cricket game where users can hit runs randomly, track their remaining balls, and restart the game when finished.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📱 Features
 
-A few resources to get you started if this is your first Flutter project:
+* **Interactive Gameplay:** Tap the **Bat** button to score random runs (`0, 1, 2, 3, 4, 6`).
+* **Real-time Scoreboard:** Live updates for total runs scored and remaining balls.
+* **Game Over Detection:** Detects when all 6 balls are bowled and displays the final status.
+* **Restart Feature:** Reset scores and ball count with a single tap to play again.
+* **Clean & Modular Architecture:** Built using Flutter best practices (Constants, Controllers, and Reusable Custom Widgets).
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🏗 Project Architecture & Structure
+
+The project follows a modular and clean folder structure:
+
+```text
+lib/
+├── constants/          # Colors, image paths, and app assets
+├── controllers/        # Business logic and state management
+├── views/              # Main UI screen and custom modular widgets
+│   └── widgets/        # Scoreboard, action buttons, images row
+└── main.dart           # App entry point
