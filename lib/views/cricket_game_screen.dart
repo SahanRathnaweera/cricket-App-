@@ -31,8 +31,14 @@ class _CricketGameScreenState extends State<CricketGameScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Mini Cricket'),
-        backgroundColor: const Color.fromARGB(255, 248, 248, 248),
+        title: const Text(
+          'Mini Cricket',
+          style: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        backgroundColor: const Color.fromARGB(255, 19, 29, 66),
         centerTitle: true,
       ),
       body: Container(
